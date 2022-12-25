@@ -110,11 +110,11 @@ h4 + p {
 }
 
 .menu-button {
-  background-image: url('./img/icons/menu.svg');
+  background-image: url('../img/icons/menu.svg');
 }
 
 .close-button {
-  background-image: url('./img/icons/cross.svg');
+  background-image: url('../img/icons/cross.svg');
   border: none;
 }
 

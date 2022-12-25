@@ -1,0 +1,12 @@
+{
+  "short_name": "Юлия Бартеньева",
+  "name": "Юлия Бартеньева - психолог схематерапевт",
+  "icons": [{
+    "src": "icon.png",
+    "type": "image/png",
+    "sizes": "192x192"
+  }],
+  "start_url": "/",
+  "background_color": "#8e8eee",
+  "theme_color": "#8e8eee"
+}
