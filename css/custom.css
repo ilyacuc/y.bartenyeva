@@ -7,7 +7,7 @@
 html {
   color: #222;
   background-color: var(--background-color);
-  font-size: 1em;
+  font-size: 18px;
   line-height: 1.4;
   font-family: Alegreya, Serif, serif;
 }
@@ -35,33 +35,33 @@ html {
 }
 
 h1 {
-  font-size: 36px;
+  font-size: 2.25rem;
   font-weight: bold;
   margin: 0;
 }
 
 .subtitle {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: normal;
   font-variation-settings: 'wght' 450;
   margin: 0;
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: normal;
   font-variation-settings: 'wght' 450;
-  margin: 30px 0 16px;
+  margin: 70px 0 16px;
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: normal;
   font-variation-settings: 'wght' 500;
-  margin: 20px 0 0 0;
+  margin: 25px 0 0 0;
 }
 
-h4 + p {
+h3 + p {
   margin-top: 6px;
 }
 
@@ -83,7 +83,7 @@ h4 + p {
 
 .button {
   font-family: Alegreya, Serif, serif;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: inherit;
   line-height: inherit;
   padding: 10px 20px;
@@ -94,7 +94,7 @@ h4 + p {
 
 .-small {
   padding: 4px 11px;
-  font-size: 16px;
+  font-size: 1rem;
   height: 40px;
 }
 
@@ -124,7 +124,7 @@ h4 + p {
   justify-content: center;
   align-items: center;
   gap: 8px;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-variation-settings: 'wght' 500;
   margin: 60px 0;
 }
@@ -159,6 +159,13 @@ h4 + p {
   margin: 10px 20px;
 }
 
+.modal-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70%;
+}
+
 
 .modal.active {
   opacity: 1;
@@ -172,7 +179,7 @@ h4 + p {
   max-width: 450px;
   text-align: center;
   margin: 30px auto;
-  font-size: 18px;
+  font-size: 1.1rem;
 }
 
 .navbar {
@@ -196,6 +203,7 @@ h4 + p {
   display: flex;
   justify-content: space-between;
   margin: 10px 20px;
+  font-size: 0.9rem;
 }
 
 .navbar-buttons {
@@ -205,7 +213,8 @@ h4 + p {
 }
 
 .navbar-title {
-  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 25px;
   font-variation-settings: 'wght' 480;
 }
 
@@ -213,15 +222,17 @@ h4 + p {
   margin: auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 10px;
+  gap: 15vw;
   justify-items: center;
 }
+
 .contact-link {
   display: block;
   text-decoration: none;
   color: inherit;
 }
-.contact-link img{
-width: 80px;
-height: 80px;
+
+.contact-link img {
+  width: 30vw;
+  height: 30vw;
 }
