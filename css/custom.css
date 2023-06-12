@@ -21,6 +21,10 @@ html {
   -webkit-text-size-adjust: 100%; /* 2 */
 }
 
+a {
+  color: var(--main-color);
+  text-decoration: none;
+}
 
 body {
   margin: 0;
