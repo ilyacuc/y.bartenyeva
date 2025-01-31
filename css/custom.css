@@ -154,6 +154,32 @@ h3 + p {
   filter: brightness(140%);
 }
 
+.button-secondary {
+  font-family: Alegreya, Serif, serif;
+  font-size: 1rem;
+  font-weight: inherit;
+  line-height: inherit;
+  padding: 10px 20px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  text-decoration: none;
+  background: var(--background-color);
+  border: 1px solid var(--border-color);
+  color: var(--main-color);
+}
+
+.button-secondary:hover {
+  background: var(--main-color);
+  filter: brightness(120%);
+  color: #020202;
+}
+
+.button-secondary:active {
+  background: var(--main-color);
+  filter: brightness(140%);
+  color: #020202;
+}
+
 .-small {
   padding: 4px 11px;
   font-size: 1rem;
