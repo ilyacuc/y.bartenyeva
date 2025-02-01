@@ -140,18 +140,20 @@ h3 + p {
   font-weight: inherit;
   line-height: inherit;
   padding: 10px 20px;
-  background: var(--main-color);
+  background: #99a8dc;
   border: 1px solid var(--border-color);
   border-radius: 4px;
   text-decoration: none;
+  transition: all 0.1s;
+  cursor: pointer;
 }
 
 .button:hover {
-  filter: brightness(120%);
+  filter: brightness(105%);
 }
 
 .button:active {
-  filter: brightness(140%);
+  filter: brightness(109%);
 }
 
 .button-secondary {
@@ -165,19 +167,17 @@ h3 + p {
   text-decoration: none;
   background: var(--background-color);
   border: 1px solid var(--border-color);
-  color: var(--main-color);
+  color: #020202;
+  transition: all 0.1s;
+  cursor: pointer;
 }
 
 .button-secondary:hover {
-  background: var(--main-color);
-  filter: brightness(120%);
-  color: #020202;
+  filter: brightness(105%);
 }
 
 .button-secondary:active {
-  background: var(--main-color);
-  filter: brightness(140%);
-  color: #020202;
+  filter: brightness(109%);
 }
 
 .-small {

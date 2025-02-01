@@ -10,7 +10,7 @@
   height: 100%;
   box-sizing: border-box;
   background-color: rgba(32, 33, 36, 0.6);
-  padding: 72px;
+  padding: 45px 2% 10px;
   z-index: 9999;
 }
 .mmGMM {
@@ -22,8 +22,8 @@
 }
 .Xfsokf {
   position: fixed;
-  top: 26px;
-  right: 72px;
+  top: 4px;
+  right: 2%;
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;

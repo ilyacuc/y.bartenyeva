@@ -19,8 +19,10 @@
     />
     <meta name="author" content="Юлия Бартеньева" />
     <meta name="creator" content="Юлия Бартеньева" />
-
+    <meta name="robots" content="index, follow" />
     <!-- Open Graph / Facebook -->
+    <meta property="og:locale" content="ru_RU" />
+    <meta property="og:site_name" content="Юлия Бартеньева - Психолог" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://ybartenyeva.com/" />
     <meta
@@ -32,6 +34,36 @@
       content="Психолог схематерапевт. Научный подход и бережное отношение. Работаю онлайн."
     />
     <meta property="og:image" content="/img/y-social.png" />
+    <!--  structured data for local business -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Юлия Бартеньева - Психолог схематерапевт",
+        "image": "https://ybartenyeva.com/img/y-social.png",
+        "description": "Профессиональная психологическая помощь и схема-терапия онлайн",
+        "priceRange": "€€",
+        "url": "https://ybartenyeva.com/",
+    
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Доступные услуги",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Онлайн психотерапия",
+                "description": "Индивидуальная психотерапия для взрослых. Cхема-терапия."
+              },
+              "priceCurrency": "EUR",
+              "price": "80",
+              "url": "https://ybartenyeva.com/"
+            }
+          ]
+        }
+      }
+      </script>
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
@@ -127,18 +159,10 @@
         class="center-container"
         style="margin: 20px 0 20px; flex-direction: column; gap: 10px"
       >
-        <script>
-          (function () {
-            var target = document.currentScript;
-            window.addEventListener("load", function () {
-              calendar.schedulingButton.load({
-                url: "https://calendar.google.com/calendar/appointments/schedules/AcZssZ3gtraplbq8iUhA9MHmSO-BwadXWA4TOrokYyyzHBVH5aaFUmuBbd469pJfgmt50n28eh1cePGF?gv=true",
-                label: "Забронировать пробную сессию",
-                target,
-              });
-            });
-          })();
-        </script>
+        <button type="button" id="scheduling-button" class="button">
+          Забронировать пробную сессию
+        </button>
+
         <button type="button" class="button-secondary js_contact_button">
           Связаться со мной
         </button>
@@ -340,7 +364,7 @@
     <footer>
       <div>Юлия Бартеньева</div>
       <div>Психолог схематерапевт</div>
-      <div>2023</div>
+      <div>2025</div>
     </footer>
 
     <div class="modal" id="js_menu_modal">
@@ -422,7 +446,7 @@
         <div class="navbar-buttons">
           <button
             type="button"
-            class="reset-button button js_contact_button -small"
+            class="reset-button button-secondary js_contact_button -small"
           >
             Контакты
           </button>
