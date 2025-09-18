@@ -163,7 +163,6 @@ h3 + p {
   font-weight: inherit;
   line-height: inherit;
   padding: 10px 20px;
-  border: 1px solid var(--border-color);
   border-radius: 4px;
   text-decoration: none;
   background: var(--background-color);
@@ -286,7 +285,7 @@ h3 + p {
   visibility: hidden;
   opacity: 0;
   background-color: var(--background-color);
-  box-shadow: 0px -10px 15px 3px var(--border-color)
+  box-shadow: 0 -10px 15px 3px var(--border-color)
 }
 
 .navbar.active {
@@ -418,3 +417,35 @@ footer {
   }
 }
 
+.highlight-title{
+    display: block;
+    font-weight: 500;
+    font-variation-settings: 'wght' 500;
+}
+.note{
+  display: block;
+  font-style: italic;
+  margin-top: 10px;
+  font-size: 80%;
+}
+.flex-block{
+  flex: 1 ;
+  margin:0;
+}
+
+.flex-container{
+  display: flex; justify-content: space-between; gap: 10px;
+
+}
+@media only screen and (max-width: 1000px) {
+  .flex-container{
+  flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+  .flex-block{
+    width: 100%;
+    box-sizing: border-box;
+
+  }
+}
