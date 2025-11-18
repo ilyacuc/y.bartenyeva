@@ -1,484 +1,383 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" prefix="og: http://ogp.me/ns#">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#6484b3" />
-    <link rel="canonical" href="https://ybartenyeva.com" />
+    <meta name="theme-color" content="#5d8a78" />
+    <link rel="canonical" href="https://ybartenyeva.com/" />
 
-    <title>Юлия Бартеньева - психолог схематерапевт</title>
-
-    <!-- General -->
-    <meta
-      name="description"
-      content="Психолог схематерапевт. Научный подход и бережное отношение. Работаю онлайн."
-    />
-    <meta
-      name="keywords"
-      content="Психолог,схематерапевт,психолог онлайн,психотерапия,психотерапия онлайн,схема-терапевт,схема терапевт,схематерапия,схема-терапия,схема терапия"
-    />
+    <!-- SEO & Meta -->
+    <title>Психолог Юлия Бартеньева | Схема-терапия онлайн и в Амстердаме</title>
+    <meta name="description" content="Клинический психолог и схема-терапевт. Помощь при тревоге, депрессии и адаптации в эмиграции. Научный подход. Консультации онлайн и очно в Амстердаме." />
+    <meta name="keywords" content="Психолог, схематерапевт, психолог онлайн, психотерапия Амстердам, адаптация эмиграция" />
     <meta name="author" content="Юлия Бартеньева" />
-    <meta name="creator" content="Юлия Бартеньева" />
-    <meta name="robots" content="index, follow" />
-    <!-- Open Graph / Facebook -->
+
+    <!-- Local SEO (Amsterdam) -->
+    <meta name="geo.region" content="NL-NH" />
+    <meta name="geo.placename" content="Amsterdam" />
+    <meta name="geo.position" content="52.3676;4.9041" />
+    <meta name="ICBM" content="52.3676, 4.9041" />
+
+    <!-- Open Graph / Social Sharing -->
     <meta property="og:locale" content="ru_RU" />
-    <meta property="og:site_name" content="Юлия Бартеньева - Психолог" />
     <meta property="og:type" content="website" />
+    <meta property="og:title" content="Юлия Бартеньева - Психолог схема-терапевт" />
+    <meta property="og:description" content="Научный подход и бережное отношение. Работаю с тревогой, самооценкой и сложностями в эмиграции." />
     <meta property="og:url" content="https://ybartenyeva.com/" />
-    <meta
-      property="og:title"
-      content="Юлия Бартеньева - психолог схематерапевт"
-    />
-    <meta
-      property="og:description"
-      content="Психолог схематерапевт. Научный подход и бережное отношение. Работаю онлайн."
-    />
-    <meta property="og:image" content="/img/y-social.png" />
-    <!--  structured data for local business -->
+    <meta property="og:image" content="https://ybartenyeva.com/img/y-social.png" />
+
+    <!-- Fonts (Preloaded for speed) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/modern.css" />
+    <link rel="stylesheet" href="css/calendar.css" />
+
+    <!-- JSON-LD Schema (Rich Results) -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "ProfessionalService",
-        "name": "Юлия Бартеньева - Психолог схематерапевт",
-        "image": "https://ybartenyeva.com/img/y-social.png",
-        "description": "Профессиональная психологическая помощь и схема-терапия онлайн",
-        "priceRange": "€€",
+        "@type": "Psychologist",
+        "name": "Юлия Бартеньева",
+        "image": "https://ybartenyeva.com/img/yulia.png",
         "url": "https://ybartenyeva.com/",
-    
-        "hasOfferCatalog": {
+        "telephone": "+31620833516",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Amsterdam",
+          "addressCountry": "NL"
+        },
+        "description": "Клинический психолог, схема-терапевт. Работа с депрессией, тревогой и адаптацией.",
+        "priceRange": "80-90 EUR",
+        "knowsAbout": ["Схема-терапия", "КПТ", "Эмоционально-фокусированная терапия"],
+        "offerCatalog": {
           "@type": "OfferCatalog",
-          "name": "Доступные услуги",
+          "name": "Услуги",
           "itemListElement": [
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Онлайн психотерапия",
-                "description": "Индивидуальная психотерапия для взрослых. Cхема-терапия."
-              },
-              "priceCurrency": "EUR",
-              "price": "80",
-              "url": "https://ybartenyeva.com/"
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Очная сессия",
-                "description": "Индивидуальная психотерапия для взрослых. Cхема-терапия."
-              },
-              "priceCurrency": "EUR",
-              "price": "90",
-              "url": "https://ybartenyeva.com/"
-            }
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Онлайн психотерапия" }, "price": "80", "priceCurrency": "EUR" },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Очная консультация (Амстердам)" }, "price": "90", "priceCurrency": "EUR" }
           ]
         }
       }
-      </script>
-
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://ybartenyeva.com/" />
-    <meta
-      property="twitter:title"
-      content="Юлия Бартеньева - психолог схематерапевт"
-    />
-    <meta
-      property="twitter:description"
-      content="Психолог схематерапевт. Научный подход и бережное отношение. Работаю онлайн."
-    />
-    <meta property="twitter:image" content="/img/y-social.png" />
-
-    <meta name="yandex-verification" content="3aa12ea0e7008f72" />
-
-    <link rel="manifest" href="site.webmanifest" />
-    <link rel="apple-touch-icon" href="icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="100x100" href="/icon.png" />
-
-    <link rel="preload" as="font" href="Alegreya.ttf" />
-    <link rel="stylesheet" href="css/custom.css" />
-    <link rel="stylesheet" href="css/calendar.css" />
-    <script src="js/main.js" defer></script>
-    <script src="js/sceduling-button.js" defer></script>
-
-    <!-- Yandex.Metrika counter -->
-    <script type="text/javascript">
-      (function (m, e, t, r, i, k, a) {
-        m[i] =
-          m[i] ||
-          function () {
-            (m[i].a = m[i].a || []).push(arguments);
-          };
-        m[i].l = 1 * new Date();
-        for (var j = 0; j < document.scripts.length; j++) {
-          if (document.scripts[j].src === r) {
-            return;
-          }
-        }
-        (k = e.createElement(t)),
-          (a = e.getElementsByTagName(t)[0]),
-          (k.async = 1),
-          (k.src = r),
-          a.parentNode.insertBefore(k, a);
-      })(
-        window,
-        document,
-        "script",
-        "https://mc.yandex.ru/metrika/tag.js",
-        "ym"
-      );
-
-      ym(98677809, "init", {
-        clickmap: true,
-        trackLinks: true,
-        accurateTrackBounce: true,
-        webvisor:true
-      });
     </script>
-    <noscript
-      ><div>
-        <img
-          src="https://mc.yandex.ru/watch/98677809"
-          style="position: absolute; left: -9999px"
-          alt=""
-        /></div
-    ></noscript>
-    <!-- /Yandex.Metrika counter -->
+
+    <!-- Yandex Metrika -->
+    <script type="text/javascript">
+       (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+       m[i].l=1*new Date();
+       for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+       k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+       (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+       ym(98677809, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true });
+    </script>
   </head>
 
   <body>
-    <div class="container">
-      <header>
-        <h1>Юлия Бартеньева</h1>
-        <div class="subtitle">Психолог онлайн</div>
-        <div class="center-container" style="margin: 20px 0">
-          <img
-            class="main-face"
-            src="./img/yulia.png"
-            alt="Юлия Бартеньева - психолог схематерапевт"
-            loading="lazy"
-          />
+    <!-- Navigation -->
+    <nav class="navbar" id="js_navbar">
+      <div class="container navbar-inner">
+        <a href="#" class="logo">Юлия Бартеньева</a>
+
+        <div class="desktop-menu">
+            <a href="#when">Запросы</a>
+            <a href="#methods">Методы</a>
+            <a href="#prices">Цены</a>
+            <a href="#about">Обо мне</a>
         </div>
-      </header>
-      <div
-        class="center-container subtitle"
-        style="margin: 20px 0 36px; text-align: center"
-      >
-        <div>Научный подход к психотерапии и бережное отношение к клиенту</div>
-      </div>
-      <div
-        class="center-container"
-        style="margin: 20px 0 20px; flex-direction: column; gap: 10px"
-      >
-        <button type="button" id="scheduling-button" class="button">
-          Забронировать пробную сессию
-        </button>
 
-        <button type="button" class="button-secondary js_contact_button">
-          Связаться со мной
-        </button>
-      </div>
-      <nav class="menu menu-inline">
-        <a href="#when">Когда обращаются</a>
-        <a href="#methods">Методы</a>
-        <a href="#prices">Цены и формат</a>
-        <a href="#about">Обо мне</a>
-      </nav>
-
-      <div content="content">
-        <h2 id="when">С чем можно обратиться?</h2>
-        <ul>
-          <li>низкая самооценка или излишний перфекционизм</li>
-          <li>трудности в отношениях с людьми</li>
-          <li>негативный детский опыт</li>
-          <li>ощущение, что вы постоянно наступаете на одни и те же грабли</li>
-          <li>переживание пустоты, отстранения, откладывание жизни на потом</li>
-          <li>травматичный опыт в прошлом</li>
-          <li>сложная адаптация после переезда</li>
-          <li>хроническая депрессия, тревога</li>
-          <li>
-            расстройство личности (в том числе БАР) или выраженные черты
-            характера, которые мешают в жизни
-          </li>
-        </ul>
-        <p class="highlight-block">
-          Около 70% моих клиентов — люди в эмиграции
-        </p>
-
-        <h2 id="methods">Методы</h2>
-        <p>
-          В индивидуальной терапии я опираюсь на разные подходы (АСТ,
-          эмоционально-фокусированная терапия, интегративный подход)
-          но в основном использую <b>схема-терапию</b>.<br />Этот подход:
-        </p>
-        <ul>
-          <li>имеет научную базу и исследования эффективности</li>
-          <li>интегративный, то есть использует идеи из разных подходов</li>
-          <li>опирается на ресурсы и потребности человека</li>
-          <li>
-            сочетает в себе работу с эмоциями и детским опытом, когнитивную
-            работу и поведенческие изменения
-          </li>
-          <li>
-            сбалансированный: с одной стороны имеет структуру и четкие задачи,
-            с другой — это не протокольный подход, он не имеет жестких
-            предписаний
-          </li>
-        </ul>
-        <p>
-          После 1-6 диагностических встреч я предложу вам концептуализацию
-          вашего запроса. На основе этой концептуализации я составлю
-          терапевтический план, то есть у нас с вами будет четкое представление
-          о том, куда и зачем мы идем. Как правило, клиенты находятся у меня
-          в терапии 1-1,5 года.
-        </p>
-
-        <h2 id="prices">Цены и формат</h2>
-        <p>
-          Индивидуальная психотерапия для взрослых.
-        </p>
-        <div class="flex-container">
-        <button type="button" onclick="document.getElementById('scheduling-button').click();" class="reset-button highlight-block flex-block">
-          <span class="highlight-title">Ознакомительная встреча</span>20-30 минут<br />бесплатно
-        </button>
-        <button type="button" class="reset-button highlight-block flex-block js_contact_button">
-          <span class="highlight-title">Индивидуальная сессия</span>55 минут<br />80 евро
-          <span class="note">Лист ожидания 4 месяца</span>
-        </button>
-        <button type="button" class="reset-button highlight-block flex-block js_contact_button">
-          <span class="highlight-title">Очная сессия</span>55 минут<br />90 евро
-          <span class="note">Амстердам, по пятницам</span>
-        </button>
+        <div class="nav-actions">
+            <button type="button" class="btn btn-outline js_contact_button">Связаться</button>
+            <button type="button" class="menu-toggle" id="js_menu_modal_button" aria-label="Меню"></button>
         </div>
-        <div id="about" />
-
-        <h2 id="values">Профессиональные ценности</h2>
-        <h3>Опираюсь на научные подходы</h3>
-        <p>
-          Психотерапия со мной — это пространство, свободное от эзотерики,
-          астрологии, нумерологии, карт таро и проч. Использую методы
-          психотерапии, эффективность которых подтверждена экспериментально
-          на больших выборках. В основе их обычно лежат научные данные о работе
-          мозга и развитии человека.
-        </p>
-        <h3>Работаю бережно</h3>
-        <p>
-          Я эксперт в сфере знаний о психологии и владения психотерапевтическими
-          инструментами. А вы — эксперт по вашей жизни. Мы объединяем наши
-          усилия и вместе исследуем, как сделать вашу жизнь более наполненной
-          и счастливой. Вы не услышите от меня критики, резких суждений
-          и строгих предписаний. Психотерапия в моем понимании — про тепло
-          и поддержку.
-        </p>
-        <h3>Уважаю любой опыт клиента</h3>
-        <p>
-          Ко мне обращаются люди, живущие в разных частях мира, разных
-          профессий, с разной гендерной идентичностью и сексуальными
-          предпочтениями. Я считаю, что каждый человек — ценен и уникален.
-        </p>
-        <h3>Ценю честность и открытость</h3>
-        <p>
-          Я работаю «с открытыми картами». Это означает, что свои
-          предположениями и гипотезы я буду открыто обсуждать с вами. Вы сможете
-          задавать любые вопросы о ходе процесса.
-        </p>
-
-        <h2 id="education">Образование и опыт</h2>
-        <h3>Высшее образование</h3>
-        <p>
-          Клиническая психология, специалист. Институт психологии Л.С.
-          Выготского, РГГУ, 2013-2018.
-          <br />
-          Признано IDW соответствующим Masters in Psychology голландской системы
-          высшего образования.
-        </p>
-        <h3>Дополнительное образование</h3>
-        <ul>
-          <li>
-            Детская психотерапия в интегративном межперсональном
-            внутрипсихическом подходе, Российско-Австрийский проект
-            (ÖKids)/институт «Генезис», Москва, 2016-2019 (360 ч)
-          </li>
-          <li>
-            Психологическое консультирование семьи в системном подходе,
-            профессиональная переподготовка, 2019-2020 (268 ч)
-          </li>
-          <li>
-            Индивидуальная схема-терапия взрослых, обучение по международным
-            стандартам, МИСТ, 2020 (72 ч)
-          </li>
-          <li>EFT: Attachment Science in Practice, Psychwire, 2020 (15 ч)</li>
-          <li>Essentials of CBT, Beck Institute for CBT, 2020 (8 h)</li>
-          <li>
-            Emotionally Focused Individual Therapy (EFIT), Level One, Vancouver
-            Island Centre for Emotionally Focused Therapy, 2020 (12 h)
-          </li>
-          <li>
-            Externship in Emotionally Focused Couples Therapy, Arkansas Center
-            for EFT, 2020
-          </li>
-          <li>
-            ПТСР — базовые навыки и терапия, основанная на КБТ, Петра Нойман,
-            МИСТ, 2020-2021 (12 ч)
-          </li>
-          <li>Майндфулнес и Схема-терапия, ван Фрейсвайк, МИСТ, 2021 (12 ч)</li>
-          <li>
-            ISST-approved training program «Schema Therapy», Maastricht
-            (online), 2021, (40 h)
-          </li>
-          <li>
-            Психиатрия для психологов, курс Mental Health Center (Москва), 2021
-          </li>
-          <li>
-            Люди с БАР и схема-терапия: помочь или навредить?, Наталья Дикова,
-            МИСТ, 2022 (4 ч)
-          </li>
-          <li>
-            Схема-терапия детей и подростков, М. Галимзянова, П. Касьяник,
-            Высшая школа психологии, 2022-2023 (48 ч)
-          </li>
-          <li>
-            Ценности в схема-терапии как источник позитивной мотивации к
-            изменениям, 2023 (3 ч)
-          </li>
-          <li>
-            Терапия принятия и ответственности, Евгения Дашкова, «Чистые
-            Когниции», 2023 (25 ч)
-          </li>
-
-          <li>Более 200 часов личной терапии и 50 часов супервизии</li>
-        </ul>
-        <p class="highlight-block">более 2000 часов работы с клиентами</p>
-
-        <p>
-          Сертифицирована в Австрии как детский психотерапевт в интегративном
-          подходе.<br />
-          Являюсь членом ISST (International Society for Schema-Therapy) и АКПН
-          (Ассоциации контекстуально-поведенческой терапии).
-        </p>
-        <p>Сотрудничаю с сервисами подбора психологов Мета и Alter</p>
-
-        <p>
-          <a
-            href="https://drive.google.com/drive/folders/1Jg4w-GzZoeUgaL_lw7lFzTC7UDvboqwF"
-            target="_blank"
-            >ПОСМОТРЕТЬ СЕРТИФИКАТЫ</a
-          >
-        </p>
-
-        <h2 id="donotwork">В настоящее время я не работаю:</h2>
-        <ul>
-          <li>с РПП</li>
-          <li>с СДВГ как основным запросом</li>
-          <li>с шизофренией, шизофреническим спектром</li>
-          <li>с зависимостями</li>
-        </ul>
-        <p>
-          В связи с форматом работы (онлайн) не беру клиентов с суицидальным
-          риском
-        </p>
       </div>
-    </div>
+    </nav>
 
-    <footer>
-      <div>Юлия Бартеньева</div>
-      <div>Психолог схематерапевт</div>
-      <div>2025</div>
+    <!-- Hero Section -->
+    <header class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <span class="hero-badge">психолог онлайн</span>
+          <h1>Научный подход к психотерапии и бережное отношение</h1>
+          <p class="hero-text">
+            Помогаю справиться с тревогой, депрессией и трудностями в отношениях, используя доказательные методы схема-терапии.
+          </p>
+          <div class="hero-buttons">
+            <button type="button" id="scheduling-button" class="btn btn-primary">
+              Забронировать сессию
+            </button>
+            <button type="button" class="btn btn-text js_contact_button">
+              Написать мне <span class="arrow">→</span>
+            </button>
+          </div>
+        </div>
+        <div class="hero-image-wrapper">
+            <div class="blob-bg"></div>
+            <!-- Important: Explicit width/height for Core Web Vitals -->
+            <img
+                src="./img/yulia.png"
+                alt="Юлия Бартеньева - Психолог"
+                class="hero-img"
+                width="350"
+                height="350"
+                loading="eager"
+            />
+        </div>
+      </div>
+    </header>
+
+    <!-- Stats Bar -->
+    <section class="stats-bar">
+        <div class="container">
+            <p class="stat-text">🌱 Около <strong>70%</strong> моих клиентов — люди в эмиграции</p>
+        </div>
+    </section>
+
+    <!-- Problems / When to apply -->
+    <section id="when" class="section bg-white">
+      <div class="container">
+        <h2 class="section-title">С чем можно обратиться?</h2>
+        <div class="grid-cards">
+          <div class="card-item">
+             <h3>Самооценка</h3>
+             <p>Низкая самооценка, излишний перфекционизм, неуверенность.</p>
+          </div>
+          <div class="card-item">
+             <h3>Отношения</h3>
+             <p>Трудности в отношениях с людьми, конфликты, одиночество.</p>
+          </div>
+          <div class="card-item">
+             <h3>Эмоции</h3>
+             <p>Хроническая тревога, депрессия, эмоциональная нестабильность.</p>
+          </div>
+          <div class="card-item">
+             <h3>Сценарии</h3>
+             <p>Ощущение, что вы постоянно наступаете на одни и те же грабли.</p>
+          </div>
+          <div class="card-item">
+             <h3>Травма</h3>
+             <p>Негативный детский опыт, травматичные события в прошлом.</p>
+          </div>
+          <div class="card-item">
+             <h3>Адаптация</h3>
+             <p>Сложная адаптация после переезда, потеря опор, изоляция.</p>
+          </div>
+          <div class="card-item full-width">
+            <h3>Личностные расстройства</h3>
+             <p>Переживание пустоты, расстройство личности (в том числе БАР) или выраженные черты характера.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Methods -->
+    <section id="methods" class="section bg-sand">
+      <div class="container">
+        <div class="split-layout">
+            <div class="text-block">
+                <h2 class="section-title">Методы работы</h2>
+                <p>В индивидуальной терапии я опираюсь на АСТ, эмоционально-фокусированную терапию, но основным инструментом является <strong>Схема-терапия</strong>.</p>
+                <ul class="check-list">
+                    <li>Имеет научную базу и доказанную эффективность</li>
+                    <li>Работает с эмоциями, детским опытом и поведением</li>
+                    <li>Не имеет жестких протоколов, подстраивается под вас</li>
+                </ul>
+                <div class="info-box">
+                    <p><strong>Как это работает?</strong><br>
+                    После 1-6 диагностических встреч мы составим план. Обычно клиенты находятся в терапии 1-1.5 года для устойчивого результата.</p>
+                </div>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Prices -->
+    <section id="prices" class="section">
+      <div class="container">
+        <h2 class="section-title center">Цены и формат</h2>
+        <p class="section-subtitle center">Индивидуальная психотерапия для взрослых</p>
+
+        <div class="pricing-grid">
+          <!-- Free Intro -->
+          <div class="price-card" onclick="document.getElementById('scheduling-button').click();">
+            <div class="price-header">Знакомство</div>
+            <div class="price-amount">Бесплатно</div>
+            <div class="price-details">20-30 минут</div>
+            <p class="price-desc">Ознакомительная встреча, чтобы понять, подходим ли мы друг другу.</p>
+            <button class="btn btn-small btn-outline">Забронировать</button>
+          </div>
+
+          <!-- Online (Popular) -->
+          <div class="price-card featured js_contact_button">
+            <div class="tag">Популярно</div>
+            <div class="price-header">Онлайн сессия</div>
+            <div class="price-amount">80 €</div>
+            <div class="price-details">55 минут</div>
+            <p class="price-desc">Регулярная терапевтическая работа в Zoom/Google Meet.</p>
+            <div class="price-note">Лист ожидания 4 месяца</div>
+            <button class="btn btn-small btn-primary">Связаться</button>
+          </div>
+
+          <!-- Offline -->
+          <div class="price-card js_contact_button">
+            <div class="price-header">Очно (Амстердам)</div>
+            <div class="price-amount">90 €</div>
+            <div class="price-details">55 минут</div>
+            <p class="price-desc">Личная встреча в кабинете в Амстердаме.</p>
+            <div class="price-note">По пятницам</div>
+            <button class="btn btn-small btn-outline">Связаться</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Values -->
+    <section id="about" class="section bg-white">
+      <div class="container">
+        <h2 class="section-title">Профессиональные ценности</h2>
+        <div class="values-grid">
+            <div class="value-item">
+                <h3>🔭 Научный подход</h3>
+                <p>Свободно от эзотерики и астрологии. Только методы с подтвержденной эффективностью, основанные на нейробиологии.</p>
+            </div>
+            <div class="value-item">
+                <h3>❤️ Бережность</h3>
+                <p>Без критики и строгих предписаний. Вы эксперт своей жизни, я лишь даю инструменты. Тепло и поддержка.</p>
+            </div>
+            <div class="value-item">
+                <h3>🌍 Уважение</h3>
+                <p>Работаю с людьми любых взглядов, профессий и идентичностей. Каждый человек ценен.</p>
+            </div>
+            <div class="value-item">
+                <h3>🤝 Прозрачность</h3>
+                <p>Работаю «с открытыми картами». Обсуждаю с вами все гипотезы и планы. Вы всегда понимаете, что происходит.</p>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="section bg-sand">
+      <div class="container">
+        <h2 class="section-title">Образование и опыт</h2>
+
+        <div class="resume-block">
+            <div class="resume-header">
+                <h3>Юлия Бартеньева</h3>
+                <p>Клинический психолог (РГГУ, 2013-2018)</p>
+                <p class="small">Признано IDW (Masters in Psychology, NL)</p>
+            </div>
+
+            <div class="stats-row">
+                <div class="stat">
+                    <span class="num">2000+</span>
+                    <span class="label">часов практики</span>
+                </div>
+                <div class="stat">
+                    <span class="num">200+</span>
+                    <span class="label">часов личной терапии</span>
+                </div>
+                <div class="stat">
+                    <span class="num">ISST</span>
+                    <span class="label">Член ассоциации</span>
+                </div>
+            </div>
+
+            <div class="education-list">
+                <h4>Ключевые специализации:</h4>
+                <ul>
+                    <li>Схема-терапия (ISST-approved training)</li>
+                    <li>EFT (Эмоционально-фокусированная терапия)</li>
+                    <li>Терапия принятия и ответственности (ACT)</li>
+                    <li>Работа с ПТСР и травмой</li>
+                </ul>
+                <a href="https://drive.google.com/drive/folders/1Jg4w-GzZoeUgaL_lw7lFzTC7UDvboqwF" target="_blank" rel="noopener noreferrer" class="link-arrow">Посмотреть все сертификаты →</a>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Exclusions -->
+    <section id="donotwork" class="section">
+      <div class="container">
+        <div class="exclusions-box">
+            <h3>⚠️ С чем я не работаю в данный момент:</h3>
+            <ul>
+                <li>РПП (расстройства пищевого поведения)</li>
+                <li>СДВГ как основной запрос</li>
+                <li>Шизофренический спектр</li>
+                <li>Химические зависимости</li>
+                <li>Высокий суицидальный риск (из-за ограничений онлайн формата)</li>
+            </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+            <div>
+                <h4>Юлия Бартеньева</h4>
+                <p>Психолог схема-терапевт</p>
+            </div>
+            <div class="social-links">
+                <a href="https://www.instagram.com/k_sebe_teplo/" target="_blank" rel="noopener noreferrer">Instagram</a>
+                <a href="https://t.me/Ybartenyeva" target="_blank" rel="noopener noreferrer">Telegram</a>
+                <a href="mailto:y.bartenieva@gmail.com">Email</a>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2025. Все права защищены.
+        </div>
+      </div>
     </footer>
 
+    <!-- Mobile Menu Modal -->
     <div class="modal" id="js_menu_modal">
       <div class="modal-header">
-        <button
-          type="button"
-          class="reset-button icon-button close-button"
-          id="js_menu_close_button"
-          aria-label="Закрыть"
-          title="Закрыть"
-        ></button>
+        <button type="button" class="close-button" id="js_menu_close_button" aria-label="Закрыть"></button>
       </div>
       <div class="modal-content">
-        <nav class="menu">
+        <nav class="mobile-menu">
           <a href="#when">Когда обращаются</a>
           <a href="#methods">Методы</a>
-          <a href="#prices">Цены и формат</a>
-          <a href="#values">Профессиональные ценности</a>
-          <a href="#education">Образование и опыт</a>
-          <a href="#donotwork">С чем я не работаю</a>
+          <a href="#prices">Цены</a>
+          <a href="#education">Образование</a>
+          <a href="#donotwork">Ограничения</a>
         </nav>
       </div>
     </div>
 
+    <!-- Contact Modal -->
     <div class="modal" id="js_contact_modal">
       <div class="modal-header">
-        <button
-          type="button"
-          class="reset-button icon-button close-button"
-          id="js_contact_close_button"
-          aria-label="Закрыть"
-          title="Закрыть"
-        ></button>
+        <button type="button" class="close-button" id="js_contact_close_button" aria-label="Закрыть"></button>
       </div>
       <div class="modal-content">
-        <div class="contacts">
-          <a
-            class="contact-link"
-            target="_blank"
-            rel="noreferrer"
-            href="https://wa.me/31620833516"
-          >
-            <img src="img/icons/whatsapp.svg" alt="WhatsApp" loading="lazy" />
+        <div class="contacts-grid">
+          <a class="contact-tile" href="https://wa.me/31620833516" target="_blank" rel="noopener noreferrer">
+            <img src="img/icons/whatsapp.svg" alt="WhatsApp" width="40" height="40" />
+            <span>WhatsApp</span>
           </a>
-          <a
-            class="contact-link"
-            target="_blank"
-            rel="noreferrer"
-            href="https://t.me/Ybartenyeva"
-          >
-            <img src="img/icons/tg.svg" alt="Telegram" loading="lazy" />
+          <a class="contact-tile" href="https://t.me/Ybartenyeva" target="_blank" rel="noopener noreferrer">
+            <img src="img/icons/tg.svg" alt="Telegram" width="40" height="40" />
+            <span>Telegram</span>
           </a>
-          <a
-            class="contact-link"
-            target="_blank"
-            rel="noreferrer"
-            href="https://www.instagram.com/k_sebe_teplo/"
-          >
-            <img src="img/icons/ig.svg" alt="Instagram" loading="lazy" />
+          <a class="contact-tile" href="https://www.instagram.com/k_sebe_teplo/" target="_blank" rel="noopener noreferrer">
+            <img src="img/icons/ig.svg" alt="Instagram" width="40" height="40" />
+            <span>Instagram</span>
           </a>
-          <a
-            class="contact-link"
-            target="_blank"
-            rel="noreferrer"
-            href="mailto:y.bartenieva@gmail.com"
-          >
-            <img src="img/icons/mail.svg" alt="Email" loading="lazy" />
+          <a class="contact-tile" href="mailto:y.bartenieva@gmail.com">
+            <img src="img/icons/mail.svg" alt="Email" width="40" height="40" />
+            <span>Email</span>
           </a>
         </div>
       </div>
     </div>
 
-    <div class="navbar" id="js_navbar">
-      <div class="navbar-container">
-        <div>
-          <div class="navbar-title">Юлия Бартеньева</div>
-          <div>Психолог онлайн</div>
-        </div>
-        <div class="navbar-buttons">
-          <button
-            type="button"
-            class="reset-button button-secondary js_contact_button -small"
-          >
-            Контакты
-          </button>
-          <button
-            type="button"
-            class="reset-button icon-button menu-button"
-            id="js_menu_modal_button"
-            aria-label="Меню"
-            title="Меню"
-          ></button>
-        </div>
-      </div>
-    </div>
+    <script src="js/main.js" defer></script>
+    <script src="js/sceduling-button.js" defer></script>
   </body>
 </html>
