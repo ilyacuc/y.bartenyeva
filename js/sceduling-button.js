@@ -282,14 +282,3 @@ this.gcal = this.gcal || {};
     _._DumpException(e);
   }
 })(this.gcal);
-
-(function () {
-  var target = document.getElementById("scheduling-button");
-  window.addEventListener("load", function () {
-    calendar.schedulingButton.load({
-      url: "https://calendar.google.com/calendar/appointments/schedules/AcZssZ3gtraplbq8iUhA9MHmSO-BwadXWA4TOrokYyyzHBVH5aaFUmuBbd469pJfgmt50n28eh1cePGF?gv=true",
-
-      target,
-    });
-  });
-})();
