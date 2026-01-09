@@ -4,7 +4,9 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#6484b3" />
-    <link rel="canonical" href="https://ybartenyeva.com" />
+    <link rel="canonical" href="https://ybartenyeva.com/" />
+    <link rel="alternate" href="https://ybartenyeva.com/" hreflang="ru" />
+    <link rel="alternate" href="https://ybartenyeva.com/" hreflang="x-default" />
 
     <title>Юлия Бартеньева - психолог схематерапевт</title>
 
@@ -33,7 +35,10 @@
       property="og:description"
       content="Психолог схематерапевт. Научный подход и бережное отношение. Работаю онлайн."
     />
-    <meta property="og:image" content="/img/y-social.png" />
+    <meta property="og:image" content="https://ybartenyeva.com/img/y-social.png" />
+    <meta property="og:image:width" content="753" />
+    <meta property="og:image:height" content="724" />
+    <meta property="og:image:alt" content="Юлия Бартеньева - психолог схематерапевт" />
     <!--  structured data for local business -->
     <script type="application/ld+json">
       {
@@ -87,20 +92,29 @@
       property="twitter:description"
       content="Психолог схематерапевт. Научный подход и бережное отношение. Работаю онлайн."
     />
-    <meta property="twitter:image" content="/img/y-social.png" />
+    <meta property="twitter:image" content="https://ybartenyeva.com/img/y-social.png" />
+    <meta property="twitter:image:alt" content="Юлия Бартеньева - психолог схематерапевт" />
 
     <meta name="yandex-verification" content="3aa12ea0e7008f72" />
 
     <link rel="manifest" href="site.webmanifest" />
-    <link rel="apple-touch-icon" href="icon.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" href="/favicon.ico" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="icon" type="image/png" sizes="100x100" href="/icon.png" />
 
-    <link rel="preload" as="font" href="Alegreya.ttf" />
+    <link rel="preload" as="font" href="/Alegreya.ttf" type="font/ttf" crossorigin />
+    <link
+      rel="preload"
+      as="image"
+      href="/img/yulia-680.webp"
+      type="image/webp"
+      fetchpriority="high"
+    />
     <link rel="stylesheet" href="css/custom.css" />
     <link rel="stylesheet" href="css/calendar.css" />
     <script src="js/main.js" defer></script>
-    <script src="js/sceduling-button.js" defer></script>
 
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript">
@@ -111,23 +125,24 @@
             (m[i].a = m[i].a || []).push(arguments);
           };
         m[i].l = 1 * new Date();
-        for (var j = 0; j < document.scripts.length; j++) {
-          if (document.scripts[j].src === r) {
-            return;
+
+        function load() {
+          for (var j = 0; j < document.scripts.length; j++) {
+            if (document.scripts[j].src === r) return;
           }
+          (k = e.createElement(t)),
+            (a = e.getElementsByTagName(t)[0]),
+            (k.async = 1),
+            (k.src = r),
+            a.parentNode.insertBefore(k, a);
         }
-        (k = e.createElement(t)),
-          (a = e.getElementsByTagName(t)[0]),
-          (k.async = 1),
-          (k.src = r),
-          a.parentNode.insertBefore(k, a);
-      })(
-        window,
-        document,
-        "script",
-        "https://mc.yandex.ru/metrika/tag.js",
-        "ym"
-      );
+
+        if ("requestIdleCallback" in window) {
+          requestIdleCallback(load, { timeout: 3000 });
+        } else {
+          setTimeout(load, 2000);
+        }
+      })(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
       ym(98677809, "init", {
         clickmap: true,
@@ -153,12 +168,23 @@
         <h1>Юлия Бартеньева</h1>
         <div class="subtitle">Психолог онлайн</div>
         <div class="center-container" style="margin: 20px 0">
-          <img
-            class="main-face"
-            src="./img/yulia.png"
-            alt="Юлия Бартеньева - психолог схематерапевт"
-            loading="lazy"
-          />
+          <picture>
+            <source
+              type="image/webp"
+              srcset="/img/yulia-340.webp 340w, /img/yulia-680.webp 680w"
+              sizes="(max-width: 900px) 340px, 340px"
+            />
+            <img
+              class="main-face"
+              src="/img/yulia.png"
+              width="736"
+              height="764"
+              alt="Юлия Бартеньева - психолог схематерапевт"
+              loading="eager"
+              decoding="async"
+              fetchpriority="high"
+            />
+          </picture>
         </div>
       </header>
       <div
@@ -186,7 +212,7 @@
         <a href="#about">Обо мне</a>
       </nav>
 
-      <div content="content">
+      <main>
         <h2 id="when">С чем можно обратиться?</h2>
         <ul>
           <li>низкая самооценка или излишний перфекционизм</li>
@@ -251,7 +277,7 @@
           <span class="note">Амстердам, метро Wibautstraat</span>
         </button>
         </div>
-        <div id="about" />
+        <div id="about"></div>
 
         <h2 id="values">Профессиональные ценности</h2>
         <h3>Опираюсь на научные подходы</h3>
@@ -363,6 +389,7 @@
           <a
             href="https://drive.google.com/drive/folders/1Jg4w-GzZoeUgaL_lw7lFzTC7UDvboqwF"
             target="_blank"
+            rel="noopener noreferrer"
             >ПОСМОТРЕТЬ СЕРТИФИКАТЫ</a
           >
         </p>
@@ -378,7 +405,7 @@
           В связи с форматом работы (онлайн) не беру клиентов с суицидальным
           риском
         </p>
-      </div>
+      </main>
     </div>
 
     <footer>
@@ -424,7 +451,7 @@
           <a
             class="contact-link"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
             href="https://wa.me/31620833516"
           >
             <img src="img/icons/whatsapp.svg" alt="WhatsApp" loading="lazy" />
@@ -432,7 +459,7 @@
           <a
             class="contact-link"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
             href="https://t.me/Ybartenyeva"
           >
             <img src="img/icons/tg.svg" alt="Telegram" loading="lazy" />
@@ -440,7 +467,7 @@
           <a
             class="contact-link"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
             href="https://www.instagram.com/k_sebe_teplo/"
           >
             <img src="img/icons/ig.svg" alt="Instagram" loading="lazy" />
@@ -448,7 +475,7 @@
           <a
             class="contact-link"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
             href="mailto:y.bartenieva@gmail.com"
           >
             <img src="img/icons/mail.svg" alt="Email" loading="lazy" />

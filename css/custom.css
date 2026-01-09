@@ -75,8 +75,8 @@ video {
 
 .main-face {
   width: 100%;
-  min-width: 300px;
-  min-height: 300px;
+  height: auto;
+  aspect-ratio: 736 / 764;
   clip-path: circle();
   background-color: var(--main-color);
   max-width: 340px;
@@ -114,11 +114,6 @@ h3 {
 
 h3 + p {
   margin-top: 6px;
-}
-
-@font-face {
-  font-family: "Alegreya";
-  src: url("../Alegreya.ttf") format("truetype");
 }
 
 .reset-button {
