@@ -13,7 +13,7 @@
     <!-- General -->
     <meta
       name="description"
-      content="Психолог схематерапевт. Научный подход и бережное отношение. Работаю онлайн."
+      content="Психолог схематерапевт. Научный подход и бережное отношение. Работаю онлайн и очно в Амстердаме."
     />
     <meta
       name="keywords"
@@ -33,7 +33,7 @@
     />
     <meta
       property="og:description"
-      content="Психолог схематерапевт. Научный подход и бережное отношение. Работаю онлайн."
+      content="Психолог схематерапевт. Научный подход и бережное отношение. Работаю онлайн и очно в Амстердаме."
     />
     <meta property="og:image" content="https://ybartenyeva.com/img/y-social.png" />
     <meta property="og:image:width" content="753" />
@@ -46,9 +46,23 @@
         "@type": "ProfessionalService",
         "name": "Юлия Бартеньева - Психолог схематерапевт",
         "image": "https://ybartenyeva.com/img/y-social.png",
-        "description": "Профессиональная психологическая помощь и схема-терапия онлайн",
+        "description": "Профессиональная психологическая помощь и схема-терапия онлайн и очно в Амстердаме",
         "priceRange": "€€",
         "url": "https://ybartenyeva.com/",
+        "areaServed": {
+          "@type": "City",
+          "name": "Amsterdam"
+        },
+        "location": {
+          "@type": "Place",
+          "name": "Amsterdam, metro Wibautstraat",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Amsterdam",
+            "addressCountry": "NL"
+          },
+          "hasMap": "https://maps.app.goo.gl/cDESBStoPUm5kYBN6"
+        },
     
         "hasOfferCatalog": {
           "@type": "OfferCatalog",
@@ -69,12 +83,21 @@
               "@type": "Offer",
               "itemOffered": {
                 "@type": "Service",
-                "name": "Очная сессия",
+                "name": "Очная сессия в Амстердаме",
                 "description": "Индивидуальная психотерапия для взрослых. Cхема-терапия."
               },
               "priceCurrency": "EUR",
               "price": "90",
-              "url": "https://ybartenyeva.com/"
+              "url": "https://ybartenyeva.com/",
+              "areaServed": {
+                "@type": "City",
+                "name": "Amsterdam"
+              },
+              "availableAtOrFrom": {
+                "@type": "Place",
+                "name": "Amsterdam, metro Wibautstraat",
+                "hasMap": "https://maps.app.goo.gl/cDESBStoPUm5kYBN6"
+              }
             }
           ]
         }
@@ -90,7 +113,7 @@
     />
     <meta
       property="twitter:description"
-      content="Психолог схематерапевт. Научный подход и бережное отношение. Работаю онлайн."
+      content="Психолог схематерапевт. Научный подход и бережное отношение. Работаю онлайн и очно в Амстердаме."
     />
     <meta property="twitter:image" content="https://ybartenyeva.com/img/y-social.png" />
     <meta property="twitter:image:alt" content="Юлия Бартеньева - психолог схематерапевт" />
@@ -272,10 +295,12 @@
           <span class="highlight-title">Индивидуальная сессия</span>55 минут<br />80 евро
           <span class="note">Оплата в рублях не принимается</span>
         </button>
-        <button type="button" class="reset-button highlight-block flex-block js_contact_button">
-          <span class="highlight-title">Очная сессия</span>55 минут<br />90 евро
-          <span class="note">Амстердам, метро Wibautstraat</span>
-        </button>
+        <div class="highlight-block flex-block">
+          <button type="button" class="reset-button js_contact_button highlight-button">
+            <span class="highlight-title">Очная сессия</span>55 минут<br />90 евро
+          </button>
+          <a href="https://maps.app.goo.gl/cDESBStoPUm5kYBN6" target="_blank" rel="noopener noreferrer" class="note" aria-label="Открыть в Google Maps в новой вкладке">Амстердам, метро Wibautstraat</a>
+        </div>
         </div>
         <div id="about"></div>
 
