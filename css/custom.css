@@ -423,6 +423,9 @@ footer {
   margin-top: 10px;
   font-size: 80%;
 }
+.highlight-button{
+  width: 100%;
+}
 .flex-block{
   flex: 1 ;
   margin:0;
